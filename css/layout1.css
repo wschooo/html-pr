@@ -1,0 +1,56 @@
+.container {
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user {
+  width: 600px;
+  float: left;
+}
+
+.profile img {
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin-right: 10px;
+}
+
+.profile span {
+  display: block;
+  line-height: 25px;
+}
+
+.name {
+  font-size: 17px;
+}
+
+.time {
+  font-size: 12px;
+  color: grey;
+}
+
+.image {
+  width: 200px;
+  display: block;
+  float: left;
+  margin-left: 20px;
+}
+
+.navbar li {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.comment p {
+  font-family: "Times New Roman", Times, serif;
+}

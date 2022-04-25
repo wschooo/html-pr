@@ -1,0 +1,91 @@
+.main-background {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/shoes.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px;
+  position: relative;
+}
+
+.main-title {
+  color: white;
+  font-size: 40px;
+  margin-top: 200px;
+}
+
+.comment {
+  font-size: 20px;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.buy_btn {
+  display: block;
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  z-index: 5;
+}
+
+.buy_btn > a {
+  text-decoration: none;
+}
+
+.txt_box {
+  background-color: gainsboro;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  height: 150px;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: -50px;
+  margin: 0px auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.form-background {
+  background-color: black;
+  padding: 30px;
+}
+
+.form-content {
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.form-box {
+  width: 100%;
+}
+
+.form-input {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.name-box {
+  display: inline-block;
+}
+
+.send {
+  background-color: sandybrown;
+  color: white;
+  font-size: 14px;
+  width: 100px;
+  height: 25px;
+  float: right;
+  border: none;
+}
