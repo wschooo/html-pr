@@ -43,6 +43,11 @@ thead {
   border-radius: 5px;
   padding: 20px;
   float: right;
+  cursor: pointer;
+}
+
+.btn-payment:hover {
+  background-color: chocolate;
 }
 
 .btn-payment a {
