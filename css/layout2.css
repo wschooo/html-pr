@@ -1,3 +1,40 @@
+@font-face {
+  font-family: "나눔스퀘어";
+  font-weight: 800;
+  src: url(../font/NanumSquareB.woff);
+}
+
+body {
+  font-family: "나눔스퀘어";
+}
+
+p {
+  transform: rotate(0.04);
+}
+
+.nav_container {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  background-color: coral;
+}
+
+.nav_bar {
+  width: 200px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.nav_bar:first-child {
+  margin-left: 0px;
+}
+
+.nav_bar a {
+  text-decoration: none;
+  color: white;
+}
+
 .main-background {
   width: 100%;
   height: 600px;
@@ -88,4 +125,29 @@
   height: 25px;
   float: right;
   border: none;
+}
+
+.product-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.product-box {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .product-box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-box {
+    width: 100%;
+  }
 }
