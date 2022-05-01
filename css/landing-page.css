@@ -1,0 +1,29 @@
+h1,
+p,
+span {
+  color: white;
+}
+
+.main-background {
+  width: 100%;
+  height: 600px;
+  padding: 40px;
+  background: linear-gradient(#5ba0de, 50%, #433594);
+}
+
+.title-box {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.show-btn {
+  width: 120px;
+  height: 50px;
+  border: none;
+  background-color: rgb(46, 44, 44);
+}
+
+.show-btn a {
+  color: white;
+  text-decoration: none;
+}
