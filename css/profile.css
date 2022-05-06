@@ -1,0 +1,20 @@
+.main-background {
+  padding: 20px;
+  background-color: #f7f9fc;
+  width: 100%;
+}
+
+.white-background {
+  padding: 20px;
+  background-color: white;
+}
+
+.main-btn {
+  display: block;
+  background-color: #6fbaf8;
+  border: none;
+}
+
+.profile-right {
+  border-left: 3px solid #f7f9fcbb;
+}
