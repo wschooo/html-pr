@@ -1,12 +1,13 @@
 .main-background {
-  padding: 20px;
+  padding: 40px 80px;
   background-color: #f7f9fc;
   width: 100%;
 }
 
 .white-background {
-  padding: 20px;
+  padding: 50px;
   background-color: white;
+  border-radius: 10px;
 }
 
 .main-btn {
@@ -17,4 +18,26 @@
 
 .profile-right {
   border-left: 3px solid #f7f9fcbb;
+}
+
+.skills-badge {
+  display: inline-block;
+  border: 1px solid rgb(153, 149, 149);
+  border-radius: 80px;
+  padding: 5px 15px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.skills-box {
+  width: 100%;
+  border-top: 2px solid rgb(153, 149, 149);
+}
+
+.droplet {
+  color: #6fbaf8;
+  text-align: center;
+  margin-top: 30px;
 }
