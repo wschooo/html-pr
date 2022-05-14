@@ -1,0 +1,70 @@
+@use '_reset.scss';
+
+%active {
+  color: white;
+  background-color: #017bff;
+}
+
+%div-size {
+  width: 600px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+@mixin color($bg-color, $txt-color) {
+  background-color: $bg-color;
+  color: $txt-color;
+  font-weight: 800;
+}
+
+.list-box {
+  li {
+    @extend %active;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    list-style: none;
+    border: 1px solid #eee;
+  }
+}
+
+.alert-box:first-child {
+  @extend %div-size;
+  @include color(#dff0d8, black);
+}
+
+.alert-box:nth-child(2) {
+  @extend %div-size;
+  @include color(#d9edf7, #d9edf7);
+}
+
+.alert-box:last-child {
+  @extend %div-size;
+  @include color(#fcf8e3, #fcf8e3);
+}
+
+@mixin row {
+  display: flex;
+  width: 100%;
+}
+
+@mixin col-6 {
+  width: 50%;
+}
+
+@mixin col-4 {
+  width: 33%;
+}
+
+.row {
+  @include row;
+}
+
+.col-6 {
+  @include col-6;
+}
+
+.col-4 {
+  @include col-4;
+}
