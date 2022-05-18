@@ -168,6 +168,69 @@ p {
   padding: 20px;
 }
 
+.menu-background {
+  width: 25%;
+  height: 50%;
+  background-color: black;
+  z-index: 10;
+  position: absolute;
+  transform: translateX(-60%);
+}
+
+.menu {
+  color: white;
+  padding: 10px;
+  text-align: right;
+}
+
+.item {
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.menu-background:hover {
+  animation-name: bg-black;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menu-background:hover .menu {
+  animation-name: menu-move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menu-background:hover .item {
+  animation-name: item-move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bg-black {
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes menu-move {
+  100% {
+    text-align: center;
+  }
+}
+
+@keyframes item-move {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(30px) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 .shop-container {
   display: flex;
   width: 90%;
@@ -219,6 +282,63 @@ p {
 .overlay-black p {
   color: white;
   text-align: center;
+}
+
+.shaking-btn {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+  background-color: skyblue;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.shaking-btn:hover {
+  animation-name: shaking;
+  animation-duration: 1s;
+}
+
+@keyframes shaking {
+  0% {
+    transform: skewY(-5deg);
+  }
+  25% {
+    transform: skewY(5deg);
+  }
+  50% {
+    transform: skewY(-5deg);
+  }
+  75% {
+    transform: skewY(5deg);
+  }
+  100% {
+    transform: skewY(0deg);
+  }
+}
+
+.plus {
+  font-size: 50px;
+  padding: 15px;
+  text-align: center;
+}
+
+.plus p:hover {
+  animation-name: plus-rotate;
+  animation-duration: 1s;
+}
+
+@keyframes plus-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(1.8);
+  }
 }
 
 @media screen and (max-width: 1200px) {

@@ -7,7 +7,7 @@
 
 %div-size {
   width: 600px;
-  height: 30px;
+  padding: 15px;
   margin-top: 20px;
 }
 
@@ -19,13 +19,16 @@
 
 .list-box {
   li {
-    @extend %active;
+    // @extend %active;
     width: 400px;
     height: 50px;
     padding: 10px;
     font-size: 20px;
     list-style: none;
     border: 1px solid #eee;
+    &:hover {
+      @extend %active;
+    }
   }
 }
 
@@ -44,27 +47,20 @@
   @include color(#fcf8e3, #fcf8e3);
 }
 
-@mixin row {
+@mixin column($width) {
   display: flex;
-  width: 100%;
-}
-
-@mixin col-6 {
-  width: 50%;
-}
-
-@mixin col-4 {
-  width: 33%;
+  width: $width;
+  padding: 15px;
 }
 
 .row {
-  @include row;
+  @include column(100%);
 }
 
 .col-6 {
-  @include col-6;
+  @include column(50%);
 }
 
 .col-4 {
-  @include col-4;
+  @include column(33%);
 }
